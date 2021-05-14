@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Coming soon [2021-04-30]
+# Coming soon [2021-05-14]
 
 _28 group website project_
 
