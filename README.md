@@ -9,7 +9,7 @@ _28 group website project_
 
 This project is for educational purposes only. Pull request are welcome, but priority for my real-life study mates! Thank you for your cooperation!
 
-Site published at https://augisko.github.io/Front-end-28bit-ComingSoon/
+Site published at https://augisko.github.io/front-end-28bit-comingsoon/
 
 Design: 
 
