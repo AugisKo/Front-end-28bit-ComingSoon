@@ -1,23 +1,31 @@
-/* base*/
-@import './base.css/layout.css';
-@import './base.css/reset.css';
-@import './base.css/variables.css';
+/* base */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/layout.css';
 
-/*3rd PARTY*/
+/* 3rd party */
 
-/* COMPONENTS */
+/* components */
 @import './components/button.css';
 @import './components/clock.css';
 @import './components/form.css';
 @import './components/mouse.css';
 @import './components/progress-bar.css';
 
-/*CUSTOM STYLE BELOW THIS COMMENT */
+/* CUSTOM STYLE BELOW THIS COMMENT */
 
 .bg-primary {
-    background-color: var(--color-primary); /*kintamasis is variables.css*/
+  background-color: var(--color-primary);
 }
 
 .bg-secondary {
-    background-color: var(--color-secondary); /*kintamasis is variables.css*/
+  background-color: var(--color-secondary);
+}
+
+.container.hero {
+  padding-bottom: 25px;
+}
+
+footer.container {
+  padding-top: 0;
 }
