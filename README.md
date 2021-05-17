@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Workshop 1 [2021-04-30]
+# Coming soon [2021-05-17]
 
 _28 group website project_
 
@@ -11,7 +11,14 @@ This project is for educational purposes only. Pull request are welcome, but pri
 
 Site published at https://augisko.github.io/front-end-28bit-comingsoon/
 
-Design: 
+Design: [Coming soon](https://cdn.discordapp.com/attachments/648536139677958156/651479019476221953/coming-soon-wide.png)
+
+## Project features
+
+- responsive design;
+- repetitive content is generated/rendered;
+- css animations;
+- NodeJS;
 
 ## Authors
 
