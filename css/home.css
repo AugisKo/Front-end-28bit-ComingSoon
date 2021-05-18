@@ -25,7 +25,7 @@
 /* HERO SECTION */
 .container.hero {
   padding-bottom: 25px;
-  background-image: url(/img/hero-background.jpeg);
+  background-image: url(/img/hero-background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
