@@ -11,8 +11,7 @@ This project is for educational purposes only. Pull request are welcome, but pri
 
 Site published at https://augisko.github.io/front-end-28bit-comingsoon/
 
-Design: 
-
+Design: https://cdn.discordapp.com/attachments/648536139677958156/651479019476221953/coming-soon-wide.png
 ## Authors
 
 [Eugenijus] (https://github.com/AugisKo) 
