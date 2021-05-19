@@ -4,7 +4,7 @@
 @import './base/layout.css';
 
 /* 3rd party */
-
+@import './3rd-party/font-awesome.min.css';
 /* components */
 @import './components/button.css';
 @import './components/clock.css';
@@ -61,4 +61,7 @@ color: var(--color-grey)
 
 footer.container {
   padding-top: 0;
+}
+.socials {
+
 }
