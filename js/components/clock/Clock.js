@@ -4,6 +4,7 @@ class Clock {
         this.targetDate = targetDate;
 
         this.DOM = null;
+        this.allValuesDOM = null;
 
         this.init();
     }
@@ -13,6 +14,7 @@ class Clock {
             return false;
         }
         this.render();
+        this.updateClock();
     }
 
     isValidSelector() {
@@ -49,15 +51,15 @@ class Clock {
         const dabartinisLaikas = new Date();
         const einamiejiMetai = dabartinisLaikas.getFullYear();
 
-        const numanomaGimtadienioData = einamiejiMetai + '-' + this.targetDate;
-        const numanomasLaikas = new Date(numanomaGimtadienioData);
+        let numanomaGimtadienioData = einamiejiMetai + '-' + this.targetDate;
+        let numanomasLaikas = new Date(numanomaGimtadienioData);
 
         const dabartinesMilisekundes = dabartinisLaikas.getTime();
         let numanomosMilisekundes = numanomasLaikas.getTime();
 
         if (dabartinesMilisekundes > numanomosMilisekundes) {
             numanomaGimtadienioData = (einamiejiMetai + 1) + '-' + this.targetDate;
-            numanomasLaikas = new Date(numanomaDimtadienioData);
+            numanomasLaikas = new Date(numanomaGimtadienioData);
             numanomosMilisekundes = numanomasLaikas.getTime();
         }
 
@@ -73,9 +75,17 @@ class Clock {
         const minutes = Math.floor(likusiosSekundes / 60);
         likusiosSekundes -= minutes * 60;
 
-        console.log(dienos, valandos, minutes, likusiosSekundes)
         return [dienos, valandos, minutes, likusiosSekundes];
         
+    }
+
+    updateClock() {
+        setInterval(() => { 
+            const timeValues = this.formatTime(this.calcDeadline());
+            for (let i = 0; i < 4; i++) {
+                this.allValuesDOM[i].innerText = timeValues[i]; 
+            }
+        }, 1000)
     }
 
     render() {
@@ -91,6 +101,7 @@ class Clock {
         }
 
         this.DOM.innerHTML = HTML;
+        this.allValuesDOM = this.DOM.querySelectorAll('.value');
     }
 }
 
