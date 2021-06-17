@@ -27,7 +27,6 @@ const socialsData = [
         href: '#',
         icon: 'rss'
     },
-
 ];
 
 export { socialsData }
