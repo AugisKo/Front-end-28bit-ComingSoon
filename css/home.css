@@ -161,10 +161,6 @@ transform: translate(-50%, -50%);
   display: none;
 }
 
-.bottom-texts > p {
-
-}
-
 .bottom-texts a {
   color: var(--color-light);
   text-decoration: none;
@@ -190,7 +186,7 @@ display: none;
   display: inline-block;
   content: '!';
 }
-
+/*
 .list {
   padding: 0;
   margin: 0;
@@ -203,4 +199,25 @@ display: none;
   height: 34px;
   padding-top: 7px;
   padding-left: 44px;
+}
+*/
+/* ------ kitas list element formatavimas ------- */
+ul{
+  list-style: none;
+}
+
+ul>li{
+  line-height: 30px;
+}
+
+ul>li::before {
+  display: inline-block;
+  content:'';
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/star.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
 }
