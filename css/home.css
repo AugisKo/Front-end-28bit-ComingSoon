@@ -87,6 +87,33 @@ main>.row-big>div {
   text-decoration: underline;
 }
 
+/* PROGRESS BAR */
+.bar_text {
+  display: flex;
+  justify-content: space-between;
+   color: var(--color-grey);
+}
+
+.bar {
+  margin-top: 15px;
+}
+.grey {
+display: flex;
+height: 4px;
+background-color: rgb(197, 185, 185);
+}
+.ux_blue {
+   width: 90%;
+  background-color: rgb(163, 163, 248);
+}
+.des_blue {
+  width: 86%;
+  background-color: rgb(163, 163, 248);
+}
+.dev_blue {
+  width: 86%;
+  background-color: rgb(163, 163, 248);
+}
 /* FOOTER SECTION */
 footer.container {
   padding-top: 0;
