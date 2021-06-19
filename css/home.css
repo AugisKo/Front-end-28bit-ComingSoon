@@ -100,18 +100,9 @@ main>.row-big>div {
 .grey {
 display: flex;
 height: 4px;
-background-color: rgb(197, 185, 185);
+background-color: var(--color-grey);
 }
-.ux_blue {
-   width: 90%;
-  background-color: rgb(163, 163, 248);
-}
-.des_blue {
-  width: 86%;
-  background-color: rgb(163, 163, 248);
-}
-.dev_blue {
-  width: 86%;
+.progress {
   background-color: rgb(163, 163, 248);
 }
 /* FOOTER SECTION */
