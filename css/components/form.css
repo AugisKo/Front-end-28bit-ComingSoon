@@ -1,0 +1,19 @@
+form {
+display: inline-block;
+width: 100%;
+flex-direction: column;
+gap:20px;
+}
+form > input {
+margin-bottom: 20px;
+line-height: 40px;
+border: none;
+border-bottom: 2px solid #eee;
+}
+
+form > textarea {
+line-height: 40px;
+border: none;
+border-bottom: 2px solid #eee;
+width: 100%;
+}
