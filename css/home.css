@@ -104,8 +104,8 @@ main>.row-big>div {
 }
 .mouse_button {
   margin-top: 8px;
-  width: 2px;
-  height: 8px;
+  width: 3px;
+  height: 3px;
   background-color: #fff;
   animation-name: mouse_scroll;
   animation-duration: 1s;
