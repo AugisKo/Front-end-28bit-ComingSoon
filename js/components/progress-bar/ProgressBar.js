@@ -10,13 +10,13 @@ class Progressbar {
 
   init() {
     //jei bent vienas is ju nevalidus, tai baigiame darba
-    if (!thia.isValidSelector() || !this.isValidData()) {
+    if (!this.isValidSelector() || !this.isValidData()) {
       cosole.error('ERROR: netraejo pirmines patkros');
       return false;
     }
 
     //susirandame reikiama vieta, pagal pateikta selector
-    const DOM = document.querySelector(this.selector);
+    this.DOM = document.querySelector(this.selector);
     // jeigu vieta neegzistuoja, tai baigiame darba
     if (!this.DOM) {
       console.error('ERROR: nerastas elementas, pagal duota selector');
