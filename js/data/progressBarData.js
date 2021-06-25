@@ -1,7 +1,16 @@
-const pb_proc = {
-    ux_proc = 90%,
-    des_proc = 86%,
-    dev_proc = 86%,
-}
+const progressBarData = [
+  {
+    title: 'UX Design',
+    value: 90,
+  },
+  {
+    title: 'Web Design',
+    value: 86,
+  },
+  {
+    title: 'Web Development',
+    value: 30,
+  },
+];
 
-export { pb_proc };
+export { progressBarData };

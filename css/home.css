@@ -165,7 +165,6 @@ footer.container {
   display: none;
 }
 
-.bottom-texts>p {}
 
 .bottom-texts a {
   color: var(--color-light);
@@ -187,11 +186,11 @@ footer.container {
     display: none;
   }
 }
-
+/*
 © 2021 GitHub,
 Inc. Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About
 
-/*
+
 .list {
   padding: 0;
   margin: 0;
