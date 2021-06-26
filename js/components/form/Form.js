@@ -50,7 +50,7 @@ class Form {
   }
 
   isValidName(Name) {
-    if (!this.isValidMessage(Name)) {
+    if (!this.isValidName(Name)) {
       console.error('ERROR: Name has to be a text');
       return false;
     }
@@ -78,15 +78,28 @@ class Form {
   }
 
   addEvents() {
-    this.submitButtonDOM.add.EventListener('click', (e) => {
-      e.preventDefault();
+    this.submitButtonDOM.addEventListener('click', (event) => {
+      event.preventDefault();
       let allGood = true;
+
       for (let element of this.allInputsDOM) {
         const validationRule = element.dataset.validation;
+
         if (validationRule === 'email') {
-          this.isValidEmail(element.value);
           if (this.isValidEmail(element.value) === false) {
-            allGood === false;
+            allGood = false;
+            break;
+          }
+        }
+        if (validationRule === 'Name') {
+          if (this.isValidName(element.value) === false) {
+            allGood = false;
+            break;
+          }
+        }
+        if (validationRule === 'message') {
+          if (this.isValidMessage(element.value) === false) {
+            allGood = false;
             break;
           }
         }
