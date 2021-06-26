@@ -36,6 +36,7 @@ class Form {
   //patikrinti, ar validus selector
   isValidSelector() {
     if (typeof this.selector !== 'string' || this.selector === '') {
+      console.error('ERROR: nevalidus selektorius');
       return false;
     }
     return true;
@@ -54,12 +55,15 @@ class Form {
       return false;
     }
     if (Name.length < 2) {
+      console.error('ERROR: Name has to be longer than 2 letters');
       return false;
     }
     if (Name[0].toLowerCase() === Name[0]) {
+      console.error('ERROR: Name can not to be empty');
       return false;
     }
     if (Name.slice(1).toLowerCase() !== Name.slice(1)) {
+      console.error('ERROR: Name has to be one word');
       return false;
     }
     return true;
