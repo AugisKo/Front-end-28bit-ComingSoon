@@ -10,5 +10,5 @@ import { socialsData } from './data/socialsData.js';
 // EXECUTION
 new Clock('#clock_1', clockData);
 // socials('footer .socials', socialsData);
-new Socialsoop('footer.socials', socialsData);
+new Socialsoop('footer .socials', socialsData);
 new Progressbar('.left-column', progressBarData);

@@ -8,20 +8,20 @@ class Socialsoop {
     this.init();
   }
   init() {
-    /*  if (!this.isValidSelector() || !this.isValidData()) {
+    if (!this.isValidSelector() || !this.isValidData()) {
       cosole.error('ERROR: netraejo pirmines patkros');
       return false;
-    }*/
+    }
 
     this.DOM = document.querySelector(this.selector);
 
-    /* if (!this.DOM) {
+    if (!this.DOM) {
       console.error('ERROR: nerastas elementas, pagal duota selector');
       return false;
-    }*/
+    }
     this.render();
   }
-  /*
+
   isValidSelector() {
     if (typeof this.selector !== 'string' || this.selector === '') {
       return false;
@@ -33,7 +33,7 @@ class Socialsoop {
       return false;
     }
     return true;
-  }*/
+  }
   render() {
     let HTML = '';
 
