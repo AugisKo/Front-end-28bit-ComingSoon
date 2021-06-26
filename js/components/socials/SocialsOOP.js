@@ -37,7 +37,7 @@ class Socialsoop {
   render() {
     let HTML = '';
 
-    for (const social of data) {
+    for (const social of this.data) {
       HTML += `<a href="${social.href}"
                     target="_blank"
                     class="social fa fa-${social.icon}"></a>`;
