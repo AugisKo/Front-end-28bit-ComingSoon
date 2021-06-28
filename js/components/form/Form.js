@@ -49,26 +49,6 @@ class Form {
     return true;
   }
 
-  isValidName(Name) {
-    if (!this.isValidName(Name)) {
-      console.error('ERROR: Name has to be a text');
-      return false;
-    }
-    if (Name.length < 2) {
-      console.error('ERROR: Name has to be longer than 2 letters');
-      return false;
-    }
-    if (Name[0].toLowerCase() === Name[0]) {
-      console.error('ERROR: Name can not to be empty');
-      return false;
-    }
-    if (Name.slice(1).toLowerCase() !== Name.slice(1)) {
-      console.error('ERROR: Name has to be one word');
-      return false;
-    }
-    return true;
-  }
-
   isValidMessage(message) {
     if (typeof message !== 'string' || message === '') {
       console.error('ERROR: Message has to be a text');
@@ -76,7 +56,25 @@ class Form {
     }
     return true;
   }
-
+  isValidName(name) {
+    if (!this.isValidMessage(name)) {
+      console.error('ERROR: Name has to be a text');
+      return false;
+    }
+    if (name.length < 2) {
+      console.error('ERROR: Name has to be longer than 2 letters');
+      return false;
+    }
+    if (name[0].toLowerCase() === name[0]) {
+      console.error('ERROR: Name can not to be empty');
+      return false;
+    }
+    if (name.slice(1).toLowerCase() !== name.slice(1)) {
+      console.error('ERROR: Name has to be one word');
+      return false;
+    }
+    return true;
+  }
   addEvents() {
     this.submitButtonDOM.addEventListener('click', (event) => {
       event.preventDefault();
@@ -91,7 +89,7 @@ class Form {
             break;
           }
         }
-        if (validationRule === 'Name') {
+        if (validationRule === 'name') {
           if (this.isValidName(element.value) === false) {
             allGood = false;
             break;

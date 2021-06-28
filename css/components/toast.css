@@ -1,0 +1,15 @@
+.toast {
+    width: 150px;
+    height: 30px;
+    position: fixed;
+    bottom: 50;
+    left: 50%-75px;
+    opacity: 0.7;
+    background: #0057e3;
+}
+
+.overlay {
+    z-index: 9;
+    margin: 30px;
+    background: #009938;
+}

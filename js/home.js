@@ -1,4 +1,5 @@
 // IMPORT
+import { Toast } from './components/toast/Toast.js';
 import { Clock } from './components/clock/Clock.js';
 import { Progressbar } from './components/progress-bar/ProgressBar.js';
 // import { socials } from './components/socials/socials.js';
@@ -9,6 +10,10 @@ import { socialsData } from './data/socialsData.js';
 import { Form } from './components/form/Form.js';
 
 // EXECUTION
+const toast = new Toast();
+//toast.success('Tau pavyko!');
+//toast.error('Yra klaida!');
+
 new Clock('#clock_1', clockData);
 // socials('footer .socials', socialsData);
 new Socialsoop('footer .socials', socialsData);
