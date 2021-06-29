@@ -1,6 +1,7 @@
 class Form {
-  constructor(selector) {
+  constructor(selector, toast) {
     this.selector = selector;
+    this.toastObject = toastObject;
 
     this.DOM = null;
     this.allInputsDOM = [];
