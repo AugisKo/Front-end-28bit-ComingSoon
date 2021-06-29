@@ -11,10 +11,12 @@ import { Form } from './components/form/Form.js';
 
 // EXECUTION
 const toast = new Toast();
+//toast.success('Tau pavyko!');
+//toast.error('Yra klaida!');
 
 new Clock('#clock_1', clockData);
 // socials('footer .socials', socialsData);
 new Socialsoop('footer .socials', socialsData);
 new Progressbar('.left-column', progressBarData);
-new Form('.hero form', toast);
-new Form('main form', toast);
+new Form('.hero form');
+new Form('main form');

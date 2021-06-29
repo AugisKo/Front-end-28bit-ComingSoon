@@ -1,6 +1,7 @@
 class Form {
-  constructor(selector) {
+  constructor(selector, toastObject) {
     this.selector = selector;
+    this.toastObject = toastObject;
 
     this.formDOM = null;
     this.allInputsDOM = [];
@@ -79,6 +80,12 @@ class Form {
       // jei patikrinus visus laukus, nerasta nei vienos klaidos, tai "siunciam pranesima"
       // jei patikrinus visus laukus, nerasta bent viena klaida, tai parodome visu klaidos pranesimus (kol kas, viskas pateikiama i console)
       console.log('All good:', allGood);
+
+      if (allGood) {
+        this.toastObject.success('Tavo formos informacija buvo issiusta!');
+      } else {
+        this.toastObject.error('Formoje yra klaida!');
+      }
     });
   }
 }
