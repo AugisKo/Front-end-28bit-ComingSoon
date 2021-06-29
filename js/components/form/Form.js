@@ -36,7 +36,7 @@ class Form {
   //patikrinti, ar validus selector
   isValidSelector() {
     if (typeof this.selector !== 'string' || this.selector === '') {
-      console.error('ERROR: nevalidus selektorius');
+      //console.error('ERROR: nevalidus selektorius');
       return false;
     }
     return true;
@@ -51,18 +51,18 @@ class Form {
 
   isValidMessage(message) {
     if (typeof message !== 'string' || message === '') {
-      console.error('ERROR: Message has to be a text');
+      //console.error('ERROR: Message has to be a text');
       return false;
     }
     return true;
   }
   isValidName(name) {
     if (!this.isValidMessage(name)) {
-      console.error('ERROR: Name has to be a text');
+      //console.error('ERROR: Name has to be a text');
       return false;
     }
     if (name.length < 2) {
-      console.error('ERROR: Name has to be longer than 2 letters');
+      //console.error('ERROR: Name has to be longer than 2 letters');
       return false;
     }
     if (name[0].toLowerCase() === name[0]) {
@@ -103,6 +103,11 @@ class Form {
         }
       }
       console.log('All Good?', allGood);
+      if (allGood) {
+        this.toastObject.success('Tavo formos informacija buvo issiusta!');
+      } else {
+        this.toastObject.error('Formoje yra klaida!');
+      }
     });
 
     // submit mygtumo paspaudimo metu reikia isjungti default veikima
