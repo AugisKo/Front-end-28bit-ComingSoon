@@ -28,8 +28,11 @@
     height: 100%;
     width: 100%;
     background-color: var(--color-primary);
-    animation-name: loading;
+   /* animation-name: loading;*/
     animation-duration: 3s;
+}
+.uzkrovimas .value{
+    animation-name: loading;
 }
 
 @keyframes loading {

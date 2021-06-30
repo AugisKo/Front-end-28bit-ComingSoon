@@ -5,6 +5,8 @@ class Progressbar {
 
     this.DOM = null;
 
+    this.allProgressBar = null;
+
     this.init();
   }
 
@@ -25,6 +27,7 @@ class Progressbar {
 
     // generuojame turini ir istatome i reikiama vieta
     this.render();
+    this.addEvent();
   }
   //patikrinti, ar validus selector
   isValidSelector() {
@@ -59,6 +62,25 @@ class Progressbar {
     }
 
     this.DOM.innerHTML += HTML;
+    this.allProgressBar = document.querySelectorAll('.progress-bar');
+  }
+
+  addEvent() {
+    window.addEventListener('scroll', () => {
+      const screenScrollPosition = window.scrollY;
+      const screenHeight = window.innerHeight;
+      const screenBottom = screenScrollPosition + screenHeight;
+
+      for (let i = 0; i < this.allProgressBar.length; i++) {
+        const element = this.allProgressBar[i];
+        const elementBottom = element.offsetHeight + element.offsetTop;
+
+        if (screenBottom >= elementBottom) {
+          element.classList.add('uzkrovimas');
+          console.log('animuojame');
+        }
+      }
+    });
   }
 }
 
