@@ -7,7 +7,7 @@ import { Socialsoop } from './components/socials/SocialsOOP.js';
 import { clockData } from './data/clockData.js';
 import { progressBarData } from './data/progressBarData.js';
 import { socialsData } from './data/socialsData.js';
-import { Form } from './components/form/Form.js';
+import { Form } from './components/form/FormsRB.js';
 
 // EXECUTION
 const toast = new Toast();

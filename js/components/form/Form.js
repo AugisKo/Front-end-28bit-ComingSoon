@@ -1,5 +1,5 @@
 class Form {
-  constructor(selector, toast) {
+  constructor(selector, toastObject) {
     this.selector = selector;
     this.toastObject = toastObject;
 
