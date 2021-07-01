@@ -62,7 +62,7 @@ class Progressbar {
     }
 
     this.DOM.innerHTML += HTML;
-    this.allProgressBar = document.querySelectorAll('.progress-bar');
+    this.allProgressBar = this.DOM.querySelectorAll('.progress-bar');
   }
 
   addEvent() {

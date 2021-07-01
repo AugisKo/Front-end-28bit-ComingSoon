@@ -26,10 +26,11 @@
 .progress-bar .progress>.value {
     display: inline-block;
     height: 100%;
-    width: 100%;
+    width: 0%;
     background-color: var(--color-primary);
    /* animation-name: loading;*/
     animation-duration: 3s;
+    animation-fill-mode:forwards;
 }
 .uzkrovimas .value{
     animation-name: loading;
